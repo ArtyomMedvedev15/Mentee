@@ -76,7 +76,7 @@ services:
      - SCHEMA_REGISTRY_KAFKASTORE_CONNECTION_URL=zookeeper:2181
      - SCHEMA_REGISTRY_HOST_NAME=schema-registry
      - SCHEMA_REGISTRY_LISTENERS=http://schema-registry:8081,http://localhost:8081
-    depends_on: [zookeeper, kafka]
+    depends_on: [kafka]
     healthcheck:
       test: ["CMD", "nc", "-z", "localhost", "8081"]
       interval: 30s
