@@ -11,7 +11,7 @@
 ```
 
 ### Step 3
-> The third step is to add a connector to interact with kafka connect, this can be done using **Postman**, or by passing the **curl** command to the request body: 
+> The third step is to add a connector to interact with kafka connect, this can be done using **Postman**, or by passing the **curl** command to the request body on url **http://localhost:8083/connectors**: 
 
 ```json
  {
